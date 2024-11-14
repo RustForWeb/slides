@@ -1,0 +1,9 @@
+{
+    "name": "@rustforweb/slides",
+    "description": "Slides for presentations.",
+    "author": "Rust For Web <info@rustforweb.org>",
+    "repository": "github:RustForWeb/slides",
+    "license": "MIT",
+    "private": true,
+    "scripts": {}
+}

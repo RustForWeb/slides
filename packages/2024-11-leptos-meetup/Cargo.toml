@@ -1,0 +1,12 @@
+[package]
+name = "slides-2024-11-leptos-meetup"
+description = "Slides for Leptos Meetup on 30 November 2024."
+publish = false
+
+authors.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+version.workspace = true
+
+[dependencies]

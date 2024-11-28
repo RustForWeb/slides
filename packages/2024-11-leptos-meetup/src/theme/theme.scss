@@ -1,0 +1,42 @@
+@use 'sass:color';
+@import '@radix-ui/themes/styles.css';
+@import 'reveal.js/css/theme/template/mixins';
+@import 'reveal.js/css/theme/template/settings';
+
+$backgroundColor: white;
+
+$mainColor: var(--gray-12);
+$headingColor: var(--orange-a9);
+
+$mainFontSize: 24px;
+$mainFont: var(--default-font-family);
+$headingFont: var(--heading-font-family);
+$headingTextShadow: none;
+$headingLetterSpacing: var(--heading-letter-spacing);
+$headingTextTransform: normal;
+// $headingFontWeight: var(--font-weight-bold);
+$headingFontWeight: 700;
+// $linkColor: var(--orange-a11);
+$linkColor: #cc4e00;
+// $linkColorHover: var(--orange-a11);
+$linkColorHover: #cc4e00;
+// $selectionBackgroundColor: var(--accent-a5);
+$selectionBackgroundColor: #ff8b0065;
+// $linkColor: var(--orange-a11);
+$selectionColor: #cc4e00;
+
+$heading1Size: 60px;
+$heading2Size: 35px;
+$heading3Size: 28px;
+$heading4Size: 24px;
+
+$overlayElementBgColor: 0, 0, 0;
+$overlayElementFgColor: 240, 240, 240;
+
+@include dark-bg-text-color(#fff);
+
+.reveal a:hover {
+    text-decoration: underline;
+}
+
+@import 'reveal.js/css/theme/template/theme';

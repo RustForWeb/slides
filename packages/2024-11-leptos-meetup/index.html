@@ -10,15 +10,21 @@
         <div class="reveal">
             <div class="slides">
                 <section>
-                    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 95vh">
+                    <div
+                        style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            height: 95vh;
+                        "
+                    >
                         <h1>Rust For Web</h1>
                         <h2>Daniëlle Huisman</h2>
                     </div>
 
-                    <div style="display: flex; align-items: flex-start; position: absolute; left: 1rem; bottom: 1rem;">
-                        <a href="https://slides.rustforweb.org">
-                            slides.rustforweb.org
-                        </a>
+                    <div style="display: flex; align-items: flex-start; position: absolute; left: 1rem; bottom: 1rem">
+                        <a href="https://slides.rustforweb.org"> slides.rustforweb.org </a>
                     </div>
                 </section>
                 <section data-markdown>
@@ -27,38 +33,244 @@
                     </textarea>
                 </section>
                 <section>
-                    <div style="display: flex; flex-direction: column;">
-                        <div style="display: flex;">
-                            <div style="display: flex; flex-direction: column;">
-                                <img src="./src/images/rust-shadcn-ui-logo.svg" style="width: 150px; height: 100px;" />
+                    <div
+                        style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 40px;
+                        "
+                    >
+                        <div style="display: flex; gap: 300px">
+                            <div class="fragment" data-fragment-index="1" style="display: flex; flex-direction: column">
+                                <img
+                                    src="./src/images/rust-shadcn-ui-logo.svg"
+                                    style="width: 300px; height: 200px; margin: 0px"
+                                />
 
-                                <span>shadcn/ui</span>
+                                <span style="font-size: 32px">shadcn/ui</span>
                             </div>
-                            <div style="display: flex; flex-direction: column;">
-                                <img src="./src/images/rust-radix-logo.svg" style="width: 150px; height: 100px;" />
 
-                                <span>Radix Themes</span>
+                            <div class="fragment" data-fragment-index="5" style="display: flex; flex-direction: column">
+                                <div style="width: 300px; height: 200px; position: relative">
+                                    <img
+                                        src="./src/images/radix-logo.svg"
+                                        style="
+                                            width: 300px;
+                                            height: 200px;
+                                            margin: 0px;
+                                            position: absolute;
+                                            top: 0px;
+                                            left: 0px;
+                                        "
+                                    />
+                                    <img
+                                        class="fragment"
+                                        data-fragment-index="8"
+                                        src="./src/images/rust-radix-logo.svg"
+                                        style="
+                                            width: 300px;
+                                            height: 200px;
+                                            margin: 0px;
+                                            position: absolute;
+                                            top: 0px;
+                                            left: 0px;
+                                            background-color: white;
+                                        "
+                                    />
+                                </div>
+
+                                <span style="font-size: 32px">Radix Themes</span>
                             </div>
                         </div>
-                        <div style="display: flex;">
-                            <div style="display: flex; flex-direction: column;">
-                                <img src="./src/images/rust-radix-logo.svg" style="width: 150px; height: 100px;" />
+                        <div style="display: flex; gap: 200px">
+                            <div
+                                class="fragment"
+                                data-fragment-index="4"
+                                style="
+                                    width: 100px;
+                                    height: 100px;
+                                    background: linear-gradient(
+                                        315deg,
+                                        rgba(0, 0, 0, 0) 0%,
+                                        rgba(0, 0, 0, 0) calc(50% - 2px),
+                                        rgba(0, 0, 0, 1) 50%,
+                                        rgba(0, 0, 0, 0) calc(50% + 2px),
+                                        rgba(0, 0, 0, 0) 100%
+                                    );
+                                "
+                            ></div>
 
-                                Radix Primitives
+                            <div
+                                class="fragment"
+                                data-fragment-index="2"
+                                style="
+                                    width: 100px;
+                                    height: 100px;
+                                    background: linear-gradient(
+                                        45deg,
+                                        rgba(0, 0, 0, 0) 0%,
+                                        rgba(0, 0, 0, 0) calc(50% - 2px),
+                                        rgba(0, 0, 0, 1) 50%,
+                                        rgba(0, 0, 0, 0) calc(50% + 2px),
+                                        rgba(0, 0, 0, 0) 100%
+                                    );
+                                "
+                            ></div>
+
+                            <div
+                                class="fragment"
+                                data-fragment-index="5"
+                                style="
+                                    width: 100px;
+                                    height: 100px;
+                                    background: linear-gradient(
+                                        315deg,
+                                        rgba(0, 0, 0, 0) 0%,
+                                        rgba(0, 0, 0, 0) calc(50% - 2px),
+                                        rgba(0, 0, 0, 1) 50%,
+                                        rgba(0, 0, 0, 0) calc(50% + 2px),
+                                        rgba(0, 0, 0, 0) 100%
+                                    );
+                                "
+                            ></div>
+
+                            <div
+                                class="fragment"
+                                data-fragment-index="6"
+                                style="
+                                    width: 100px;
+                                    height: 100px;
+                                    background: linear-gradient(
+                                        45deg,
+                                        rgba(0, 0, 0, 0) 0%,
+                                        rgba(0, 0, 0, 0) calc(50% - 2px),
+                                        rgba(0, 0, 0, 1) 50%,
+                                        rgba(0, 0, 0, 0) calc(50% + 2px),
+                                        rgba(0, 0, 0, 0) 100%
+                                    );
+                                "
+                            ></div>
+                        </div>
+                        <div style="display: flex; gap: 300px">
+                            <div class="fragment" data-fragment-index="4" style="display: flex; flex-direction: column">
+                                <img
+                                    src="./src/images/rust-lucide-logo.svg"
+                                    style="width: 300px; height: 200px; margin: 0px"
+                                />
+
+                                <span style="font-size: 32px">Lucide</span>
+                            </div>
+
+                            <div class="fragment" data-fragment-index="2" style="display: flex; flex-direction: column">
+                                <div style="width: 300px; height: 200px; position: relative">
+                                    <img
+                                        src="./src/images/radix-logo.svg"
+                                        style="
+                                            width: 300px;
+                                            height: 200px;
+                                            margin: 0px;
+                                            position: absolute;
+                                            top: 0px;
+                                            left: 0px;
+                                        "
+                                    />
+                                    <img
+                                        class="fragment"
+                                        data-fragment-index="8"
+                                        src="./src/images/rust-radix-logo.svg"
+                                        style="
+                                            width: 300px;
+                                            height: 200px;
+                                            margin: 0px;
+                                            position: absolute;
+                                            top: 0px;
+                                            left: 0px;
+                                            background-color: white;
+                                        "
+                                    />
+                                </div>
+
+                                <span style="font-size: 32px">Radix Primitives</span>
+                            </div>
+
+                            <div class="fragment" data-fragment-index="6" style="display: flex; flex-direction: column">
+                                <div style="width: 300px; height: 200px; position: relative">
+                                    <img
+                                        src="./src/images/radix-logo.svg"
+                                        style="
+                                            width: 300px;
+                                            height: 200px;
+                                            margin: 0px;
+                                            position: absolute;
+                                            top: 0px;
+                                            left: 0px;
+                                        "
+                                    />
+                                    <img
+                                        class="fragment"
+                                        data-fragment-index="8"
+                                        src="./src/images/rust-radix-logo.svg"
+                                        style="
+                                            width: 300px;
+                                            height: 200px;
+                                            margin: 0px;
+                                            position: absolute;
+                                            top: 0px;
+                                            left: 0px;
+                                            background-color: white;
+                                        "
+                                    />
+                                </div>
+
+                                <span style="font-size: 32px">Radix Icons</span>
                             </div>
                         </div>
-                        <div style="display: flex;">
-                            <div style="display: flex; flex-direction: column;">
-                                <img src="./src/images/rust-floating-ui-logo.svg" style="width: 150px; height: 200px;" />
+                        <div style="display: flex">
+                            <div
+                                class="fragment"
+                                data-fragment-index="3"
+                                style="
+                                    width: 100px;
+                                    height: 100px;
+                                    background: linear-gradient(
+                                        90deg,
+                                        rgba(0, 0, 0, 0) 0%,
+                                        rgba(0, 0, 0, 0) calc(50% - 2px),
+                                        rgba(0, 0, 0, 1) 50%,
+                                        rgba(0, 0, 0, 0) calc(50% + 2px),
+                                        rgba(0, 0, 0, 0) 100%
+                                    );
+                                "
+                            ></div>
+                        </div>
+                        <div style="display: flex; align-items: end; gap: 300px">
+                            <div class="fragment" data-fragment-index="7" style="display: flex; flex-direction: column">
+                                <img
+                                    src="./src/images/rust-testing-library-logo.svg"
+                                    style="width: 300px; height: 200px; margin: 0px"
+                                />
 
-                                <span>Floating UI</span>
+                                <span style="font-size: 32px">Testing Library</span>
+                            </div>
+
+                            <div class="fragment" data-fragment-index="3" style="display: flex; flex-direction: column">
+                                <img
+                                    src="./src/images/rust-floating-ui-logo.svg"
+                                    style="width: 300px; height: 400px; margin: 0px"
+                                />
+
+                                <span style="font-size: 32px">Floating UI</span>
+                            </div>
+
+                            <div style="display: flex; flex-direction: column">
+                                <div style="width: 300px; height: 200px; margin: 0px"></div>
+
+                                <span style="font-size: 32px"></span>
                             </div>
                         </div>
                     </div>
-
-
-                    <!-- <img src="./src/images/rust-lucide-logo.svg" style="width: 300px; height: 200px;" />
-                    <img src="./src/images/rust-testing-library-logo.svg" style="width: 300px; height: 200px;" /> -->
                 </section>
             </div>
         </div>

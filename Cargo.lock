@@ -1153,6 +1153,146 @@ dependencies = [
 ]
 
 [[package]]
+name = "radix-leptos-avatar"
+version = "0.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "adb1751204399a2d7ad9098c347fc3999d476d107b5bb3d3efc08f129f201cc9"
+dependencies = [
+ "leptos",
+ "radix-leptos-primitive",
+ "web-sys",
+]
+
+[[package]]
+name = "radix-leptos-checkbox"
+version = "0.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5893f65e855cbd4d8c057766b57bb613ae8b58a0bf3f35b2feb73f22c5b28023"
+dependencies = [
+ "leptos",
+ "radix-leptos-compose-refs",
+ "radix-leptos-presence",
+ "radix-leptos-primitive",
+ "radix-leptos-use-controllable-state",
+ "radix-leptos-use-previous",
+ "radix-leptos-use-size",
+ "web-sys",
+]
+
+[[package]]
+name = "radix-leptos-compose-refs"
+version = "0.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "766a65120dce576702a8c9532788b18ec5e656e474701ee6cb80a9f0024a7577"
+dependencies = [
+ "leptos",
+]
+
+[[package]]
+name = "radix-leptos-icons"
+version = "0.0.2"
+source = "git+https://github.com/RustForWeb/radix#b1a33edbf6a884b35904317c4e3ceaa5db268c05"
+dependencies = [
+ "leptos",
+]
+
+[[package]]
+name = "radix-leptos-label"
+version = "0.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "617d1594fb661da182712f5d1510928fe541680a7f3777c259a986c2c9bb5eef"
+dependencies = [
+ "leptos",
+ "radix-leptos-primitive",
+ "web-sys",
+]
+
+[[package]]
+name = "radix-leptos-presence"
+version = "0.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0b9a060cee98170782bb38333b05c0f5fd9854789f67130a206e1bd6fd318664"
+dependencies = [
+ "leptos",
+ "log",
+ "radix-leptos-compose-refs",
+ "web-sys",
+]
+
+[[package]]
+name = "radix-leptos-primitive"
+version = "0.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a97ba23a3f0549885cbc3c7b4aad16e72ef21a54fc494bb22e568508bdf97298"
+dependencies = [
+ "leptos",
+]
+
+[[package]]
+name = "radix-leptos-progress"
+version = "0.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fac59975755b78ae55f2edce0775f0da3a47c54d3868b7cffa96775332396757"
+dependencies = [
+ "leptos",
+ "radix-leptos-primitive",
+]
+
+[[package]]
+name = "radix-leptos-switch"
+version = "0.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7b6e360442ca9c97fd2d01ff5d27b33bdba40c5d02be24d09da1442999ef509d"
+dependencies = [
+ "leptos",
+ "radix-leptos-compose-refs",
+ "radix-leptos-primitive",
+ "radix-leptos-use-controllable-state",
+ "radix-leptos-use-previous",
+ "radix-leptos-use-size",
+ "web-sys",
+]
+
+[[package]]
+name = "radix-leptos-toggle"
+version = "0.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c9eb18f3013f6852b2a54ae8bcced33647397642a9caf7e96de0527f81545d98"
+dependencies = [
+ "leptos",
+ "radix-leptos-primitive",
+ "radix-leptos-use-controllable-state",
+]
+
+[[package]]
+name = "radix-leptos-use-controllable-state"
+version = "0.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "11d316f9be8f7097721bf8019580b23b908c191f541d5ac600776c82a19d3332"
+dependencies = [
+ "leptos",
+]
+
+[[package]]
+name = "radix-leptos-use-previous"
+version = "0.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "72e23107bbd055ec0d12917ded92aa52921241ccbe78de76a4f31b83f071ff9f"
+dependencies = [
+ "leptos",
+]
+
+[[package]]
+name = "radix-leptos-use-size"
+version = "0.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "155159b62fb27903f8af8625fbd1e160a02efa774a0a6497701f00a84b0ff517"
+dependencies = [
+ "leptos",
+ "web-sys",
+]
+
+[[package]]
 name = "redox_syscall"
 version = "0.5.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1381,6 +1521,25 @@ dependencies = [
  "floating-ui-leptos",
  "leptos",
  "log",
+ "tailwind_fuse",
+]
+
+[[package]]
+name = "slides-radix-primitives-examples"
+version = "0.0.1"
+dependencies = [
+ "console_error_panic_hook",
+ "console_log",
+ "convert_case",
+ "leptos",
+ "log",
+ "radix-leptos-avatar",
+ "radix-leptos-checkbox",
+ "radix-leptos-icons",
+ "radix-leptos-label",
+ "radix-leptos-progress",
+ "radix-leptos-switch",
+ "radix-leptos-toggle",
  "tailwind_fuse",
 ]
 

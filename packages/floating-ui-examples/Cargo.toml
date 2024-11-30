@@ -1,6 +1,6 @@
 [package]
 name = "slides-floating-ui-examples"
-description = "Floating UI examples."
+description = "Rust Floating UI examples."
 publish = false
 
 authors.workspace = true

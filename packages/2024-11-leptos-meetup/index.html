@@ -392,7 +392,7 @@
                             height: 95vh;
                         "
                     >
-                        <h1>Floating UI</h1>
+                        <h1>Rust Floating UI</h1>
 
                         <iframe
                             src="/floating-ui-examples/index.html"
@@ -451,7 +451,109 @@
                     </div>
                 </section>
                 <section>
-                    <h1>Radix Primitives</h1>
+                    <div
+                        style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            height: 95vh;
+                        "
+                    >
+                        <h1>Rust Radix Primitives</h1>
+
+                        <iframe
+                            src="/radix-primitives-examples/index.html"
+                            style="width: 700px; height: 590px; border-style: none; border-radius: 0.5rem"
+                        ></iframe>
+                    </div>
+                </section>
+                <section>
+                    <div
+                        style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            height: 95vh;
+                        "
+                    >
+                        <pre>
+                            <code class="language-rust" style="max-height: none; font-size: 2rem; line-height: 2.2rem;">
+                                <script type="text/template">
+                                    #[component]
+                                    pub fn App() -> impl IntoView {
+                                        view! {
+                                            <Avatar>
+                                                <AvatarImage src="https://example.com/image.png">
+                                                <AvatarFallback>IM</AvatarFallback>
+                                            </Avatar>
+
+                                            <Checkbox>
+                                                <CheckboxIndicator>
+                                                    <CheckIcon />
+                                                </CheckboxIndicator>
+                                            </Checkbox>
+                                            <Label>Accept terms and conditions</Label>
+
+                                            <Progress value=50>
+                                                <ProgressIndicator />
+                                            </Progress>
+                                        }
+                                    }
+                                </script>
+                            </code>
+                        </pre>
+                    </div>
+                </section>
+                <section>
+                    <div
+                        style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            height: 95vh;
+                        "
+                    >
+                        <pre>
+                            <code class="language-rust" style="max-height: none; font-size: 2rem; line-height: 2.2rem;">
+                                <script type="text/template">
+                                    #[component]
+                                    pub fn App() -> impl IntoView {
+                                        view! {
+                                            <Select>
+                                                <SelectTrigger>
+                                                    <SelectValue />
+                                                    <SelectIcon>
+                                                        <ChevronDownIcon />
+                                                    </SelectIcon>
+                                                </SelectTrigger>
+                                                <SelectPortal>
+                                                    <SelectContent>
+                                                        <SelectScrollUpButton>
+                                                            <ChevronUpIcon />
+                                                        </SelectScrollUpButton>
+                                                        <SelectViewport>
+                                                            <SelectGroup>
+                                                                <SelectLabel>Fruits</SelectLabel>
+                                                                <SelectItem value="apple">Apple</SelectItem>
+                                                                <SelectItem value="banana">Banana</SelectItem>
+                                                                <SelectItem value="grapes">Grapes</SelectItem>
+                                                            </SelectGroup>
+                                                        </SelectViewport>
+                                                        <SelectScrollDownButton>
+                                                            <ChevronDownIcon />
+                                                        </SelectScrollDownButton>
+                                                    </SelectContent>
+                                                </SelectPortal>
+                                            </Select>
+                                        }
+                                    }
+                                </script>
+                            </code>
+                        </pre>
+                    </div>
                 </section>
                 <section>
                     <h1>shadcn/ui</h1>

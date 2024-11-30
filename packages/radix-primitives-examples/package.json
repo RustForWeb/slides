@@ -1,13 +1,13 @@
 {
-    "name": "@rustforweb/slides-floating-ui-examples",
-    "description": "Rust Floating UI examples.",
+    "name": "@rustforweb/slides-radix-primitives-examples",
+    "description": "Rust Radix Primitives examples.",
     "author": "Rust For Web <info@rustforweb.org>",
     "repository": "github:RustForWeb/slides",
     "license": "MIT",
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "trunk build --public-url /floating-ui-examples/",
+        "build": "trunk build --public-url /radix-primitives-examples/",
         "dev": "trunk serve"
     },
     "devDependencies": {

@@ -20,7 +20,13 @@
                             gap: 10vh;
                         "
                     >
-                        <h1>Rust For Web</h1>
+                        <div>
+                            <img
+                                src="./src/images/rustforweb-logo.svg"
+                                style="width: 256px; height: 256px; margin: 0px"
+                            />
+                            <h1>Rust For Web</h1>
+                        </div>
                         <h2>Daniëlle Huisman</h2>
                     </div>
 
@@ -28,10 +34,21 @@
                         <a href="https://slides.rustforweb.org"> slides.rustforweb.org </a>
                     </div>
                 </section>
-                <section data-markdown>
-                    <textarea data-template>
-                        # Slide 2
-                    </textarea>
+                <section>
+                    <h1
+                        style="
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 1rem;
+                            color: var(--black-a12);
+                        "
+                    >
+                        <img src="./src/images/shadcn-ui-logo.svg" style="width: 5rem; height: 5rem; margin: 0px" />
+                        shadcn/ui
+                    </h1>
+
+                    <img src="./src/images/shadcn-ui-example.png" />
                 </section>
                 <section>
                     <div
@@ -364,6 +381,86 @@
                             </div>
                         </div>
                     </div>
+                </section>
+                <section>
+                    <div
+                        style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            height: 95vh;
+                        "
+                    >
+                        <h1>Floating UI</h1>
+
+                        <iframe
+                            src="/floating-ui-examples/index.html"
+                            style="width: 80vw; height: 50vh; border-style: none"
+                        ></iframe>
+                    </div>
+                </section>
+                <section>
+                    <div
+                        style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            height: 95vh;
+                        "
+                    >
+                        <pre>
+                            <code class="language-rust" style="max-height: none; font-size: 2rem; line-height: 2.2rem;">
+                                <script type="text/template">
+                                    let reference_ref = create_node_ref::<Button>();
+                                    let floating_ref = create_node_ref::<Div>();
+                                    let arrow_ref = create_node_ref::<Div>();
+                                    let (open, set_open) = create_signal(false);
+
+                                    let middleware: MiddlewareVec = vec![
+                                        Box::new(Offset::new(
+                                            OffsetOptions::Value(6.0)
+                                        )),
+                                        Box::new(Flip::new(
+                                            FlipOptions::default()
+                                        )),
+                                        Box::new(Arrow::new(
+                                            ArrowOptions::new(arrow_ref)
+                                        )),
+                                    ];
+
+                                    let UseFloatingReturn {
+                                        x,
+                                        y,
+                                        placement,
+                                        floating_styles,
+                                        middleware_data,
+                                    } = use_floating(
+                                        reference_ref.into_reference(),
+                                        floating_ref,
+                                        UseFloatingOptions::default()
+                                            .open(open.into())
+                                            .placement(Placement::Top.into())
+                                            .middleware(middleware.into())
+                                            .while_elements_mounted_auto_update(),
+                                    );
+                                </script>
+                            </code>
+                        </pre>
+                    </div>
+                </section>
+                <section>
+                    <h1>Radix Primitives</h1>
+                </section>
+                <section>
+                    <h1>shadcn/ui</h1>
+                </section>
+                <section>
+                    <h1>Radix Themes</h1>
+                </section>
+                <section>
+                    <h1>Testing Library</h1>
                 </section>
             </div>
         </div>

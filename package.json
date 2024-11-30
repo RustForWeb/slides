@@ -8,11 +8,16 @@
     "workspaces": [
         "packages/*"
     ],
-    "scripts": {},
+    "scripts": {
+        "build": "turbo check-types build && node scripts/build.mjs",
+        "dev": "turbo dev"
+    },
     "devDependencies": {
-        "prettier": "^3.3.3"
+        "prettier": "^3.3.3",
+        "turbo": "^2.3.3"
     },
     "engines": {
         "node": ">=20"
-    }
+    },
+    "packageManager": "npm@10.9.1"
 }

@@ -1,5 +1,5 @@
 [workspace]
-members = ["packages/*"]
+members = ["packages/*-examples"]
 resolver = "2"
 
 [workspace.package]
@@ -10,3 +10,7 @@ repository = "https://github.com/RustForWeb/slides"
 version = "0.0.1"
 
 [workspace.dependencies]
+console_log = "1.0.0"
+console_error_panic_hook = "0.1.7"
+log = "0.4.22"
+tailwind_fuse = "0.3.1"

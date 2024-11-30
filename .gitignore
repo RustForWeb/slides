@@ -164,3 +164,6 @@ book/book/
 
 # Tailwind CSS ouput
 tailwind.output.css
+
+# Turbo
+.turbo

@@ -1,0 +1,16 @@
+{
+    "name": "@rustforweb/slides-floating-ui-examples",
+    "description": "Floating UI examples.",
+    "author": "Rust For Web <info@rustforweb.org>",
+    "repository": "github:RustForWeb/slides",
+    "license": "MIT",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "trunk build --public-url /floating-ui-examples/",
+        "dev": "trunk serve"
+    },
+    "devDependencies": {
+        "tailwindcss": "^3.4.15"
+    }
+}

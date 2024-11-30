@@ -1,0 +1,19 @@
+[package]
+name = "slides-floating-ui-examples"
+description = "Floating UI examples."
+publish = false
+
+authors.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+version.workspace = true
+
+[dependencies]
+console_log.workspace = true
+console_error_panic_hook.workspace = true
+convert_case = "0.6.0"
+floating-ui-leptos = "0.1.3"
+leptos = {version = "0.6.15", features = ["csr"]}
+log.workspace = true
+tailwind_fuse.workspace = true

@@ -1,5 +1,13 @@
 import {defineConfig} from 'vite';
 
 export default defineConfig({
-    base: '/'
+    base: '/',
+    css: {
+        preprocessorOptions: {
+            scss: {
+                api: 'modern-compiler',
+                silenceDeprecations: ['color-functions', 'global-builtin', 'import']
+            }
+        }
+    }
 });

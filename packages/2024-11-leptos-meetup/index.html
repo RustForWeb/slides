@@ -30,9 +30,9 @@
                         <h2>Daniëlle Huisman</h2>
                     </div>
 
-                    <div style="display: flex; align-items: flex-start; position: absolute; left: 1rem; bottom: 1rem">
+                    <h3 style="display: flex; align-items: flex-start; position: absolute; left: 1rem; bottom: 1rem">
                         <a href="https://slides.rustforweb.org"> slides.rustforweb.org </a>
-                    </div>
+                    </h3>
                 </section>
                 <section>
                     <h1
@@ -481,6 +481,12 @@
                         <pre>
                             <code class="language-rust" style="max-height: none; font-size: 2rem; line-height: 2.2rem;">
                                 <script type="text/template">
+                                    use radix_leptos_avatar::*;
+                                    use radix_leptos_checkbox::*;
+                                    use radix_leptos_icons::CheckIcon;
+                                    use radix_leptos_label::*;
+                                    use radix_leptos_progress::*;
+
                                     #[component]
                                     pub fn App() -> impl IntoView {
                                         view! {
@@ -519,12 +525,15 @@
                         <pre>
                             <code class="language-rust" style="max-height: none; font-size: 2rem; line-height: 2.2rem;">
                                 <script type="text/template">
+                                    use radix_leptos_icons::{ChevronDownIcon, ChevronUpIcon};
+                                    use radix_leptos_select::*;
+
                                     #[component]
                                     pub fn App() -> impl IntoView {
                                         view! {
                                             <Select>
                                                 <SelectTrigger>
-                                                    <SelectValue />
+                                                    <SelectValue placeholder="Select a fruit..." />
                                                     <SelectIcon>
                                                         <ChevronDownIcon />
                                                     </SelectIcon>
@@ -556,13 +565,260 @@
                     </div>
                 </section>
                 <section>
-                    <h1>shadcn/ui</h1>
+                    <div
+                        style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            height: 95vh;
+                        "
+                    >
+                        <h1>Radix Themes</h1>
+
+                        <img src="./src/images/radix-themes-example.png" />
+                    </div>
                 </section>
                 <section>
-                    <h1>Radix Themes</h1>
+                    <div
+                        style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            height: 95vh;
+                        "
+                    >
+                        <h1>Rust Radix Themes</h1>
+
+                        <pre>
+                            <code class="language-rust" style="max-height: none; font-size: 2rem; line-height: 2.2rem;">
+                                <script type="text/template">
+                                    use radix_leptos_themes::{
+                                        AccentColor, Avatar, Box, Card, Flex, FlexAlign, Radius, Text, TextAs, Weight
+                                    };
+
+                                    #[component]
+                                    fn App() -> impl IntoView {
+                                        view! {
+                                            <Card>
+                                                <Flex gap=3 align=FlexAlign::Center>
+                                                    <Avatar
+                                                        size=3
+                                                        src="https:://example.com/image.png"
+                                                        radius=Radius::Full
+                                                        fallback="C"
+                                                    />
+                                                    <Box>
+                                                        <Text r#as=TextAs::Div size=2 weight=Weight::Bold>
+                                                            Clara Oswald
+                                                        </Text>
+                                                        <Text r#as=TextAs::Div size=2 color=AccentColor::Gray>
+                                                            Companion
+                                                        </Text>
+                                                    </Box>
+                                                </Flex>
+                                            </Card>
+                                        }
+                                    }
+                                </script>
+                            </code>
+                        </pre>
+                    </div>
                 </section>
                 <section>
-                    <h1>Testing Library</h1>
+                    <div
+                        style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            height: 95vh;
+                        "
+                    >
+                        <h1>shadcn/ui</h1>
+
+                        <img src="./src/images/shadcn-ui-example.png" />
+                    </div>
+                </section>
+                <section>
+                    <div
+                        style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            height: 95vh;
+                        "
+                    >
+                        <h1>Rust shadcn/ui</h1>
+
+                        <pre>
+                            <code class="language-rust" style="max-height: none; font-size: 2rem; line-height: 2.2rem;">
+                                <script type="text/template">
+                                    <Card class="w-[350px]">
+                                        <CardHeader>
+                                            <CardTitle>Create project</CardTitle>
+                                            <CardDescription>
+                                                Deploy your new project in one-click.
+                                            </CardDescription>
+                                        </CardHeader>
+                                        <CardContent>
+                                            <form class="grid w-full items-center gap-4">
+                                                <div class="flex flex-col space-y-1.5">
+                                                    <Label r#for="name">Name</Label>
+                                                    <Input id="name" placeholder="Name of your project" />
+                                                </div>
+                                                <div class="flex flex-col space-y-1.5">
+                                                    <Label r#for="framework">Framework</Label>
+                                                    <Select>
+                                                        <SelectTrigger id="framework">
+                                                            <SelectValue placeholder="Select" />
+                                                        </SelectTrigger>
+                                                        <SelectContent position=SelectPosition::Popper>
+                                                            <SelectItem value="dioxus">Dioxus</SelectItem>
+                                                            <SelectItem value="leptos">Leptos</SelectItem>
+                                                            <SelectItem value="yew">Yew</SelectItem>
+                                                        </SelectContent>
+                                                    </Select>
+                                                </div>
+                                            </form>
+                                        </CardContent>
+                                        <CardFooter class="flex justify-between">
+                                            <Button variant=ButtonVariant::Outline>Cancel</Button>
+                                            <Button>Deploy</Button>
+                                        </CardFooter>
+                                    </Card>
+                                </script>
+                            </code>
+                        </pre>
+                    </div>
+                </section>
+                <section>
+                    <div
+                        style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            height: 95vh;
+                        "
+                    >
+                        <h1>Testing Library</h1>
+
+                        <img src="./src/images/testing-library-example.png" />
+                    </div>
+                </section>
+                <section>
+                    <div
+                        style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            height: 95vh;
+                        "
+                    >
+                        <h1>Rust Testing Library</h1>
+
+                        <pre>
+                            <code class="language-rust" style="max-height: none; font-size: 2rem; line-height: 2.2rem;">
+                                <script type="text/template">
+                                    #[wasm_bindgen_test]
+                                    fn test() -> Result<(), QueryError> {
+                                        let RenderReturn {
+                                            container_queries,
+                                            ..
+                                        } = render("\
+                                            <div>\
+                                                <h1>Title</h1>\
+                                                <input placeholder="Username" />\
+                                            </div>\
+                                        ");
+
+                                        assert!(container_queries
+                                            .query_by_text("Title", MatcherOptions::default())?
+                                            .is_some());
+
+                                        assert!(container_queries
+                                            .query_by_placeholder("Username", MatcherOptions::default())?
+                                            .is_some());
+                                    }
+                                </script>
+                            </code>
+                        </pre>
+                    </div>
+                </section>
+                <section>
+                    <div
+                        style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            height: 95vh;
+                            gap: 4rem;
+                        "
+                    >
+                        <h1>Rust For Web</h1>
+
+                        <div style="display: flex; flex-direction: column; gap: 1rem">
+                            <h2>
+                                <a
+                                    href="https://github.com/RustForWeb"
+                                    style="display: flex; align-items: center; gap: 1rem"
+                                >
+                                    <img src="./src/images/github.svg" style="width: 4rem; height: 4rem; margin: 0px" />
+                                    @RustForWeb
+                                </a>
+                            </h2>
+                            <h2>
+                                <a
+                                    href="https://discord.gg/nzbN54K2Gr"
+                                    style="display: flex; align-items: center; gap: 1rem"
+                                >
+                                    <img
+                                        src="./src/images/discord.svg"
+                                        style="width: 4rem; height: 4rem; margin: 0px"
+                                    />
+                                    discord.gg/nzbN54K2Gr
+                                </a>
+                            </h2>
+                            <h2>
+                                <a
+                                    href="https://mastodon.social/@RustForWeb"
+                                    style="display: flex; align-items: center; gap: 1rem"
+                                >
+                                    <img
+                                        src="./src/images/mastodon.svg"
+                                        style="width: 4rem; height: 4rem; margin: 0px"
+                                    />
+                                    @RustForWeb@mastodon.social
+                                </a>
+                            </h2>
+                            <h2>
+                                <a
+                                    href="https://bsky.app/profile/rustforweb.bsky.social"
+                                    style="display: flex; align-items: center; gap: 1rem"
+                                >
+                                    <img
+                                        src="./src/images/bluesky.svg"
+                                        style="width: 4rem; height: 4rem; margin: 0px"
+                                    />
+                                    @rustforweb.bsky.social
+                                </a>
+                            </h2>
+                            <h2>
+                                <a
+                                    href="https://x.com/RustForWeb"
+                                    style="display: flex; align-items: center; gap: 1rem"
+                                >
+                                    <img src="./src/images/x.svg" style="width: 4rem; height: 4rem; margin: 0px" />
+                                    @RustForWeb
+                                </a>
+                            </h2>
+                        </div>
+                    </div>
                 </section>
             </div>
         </div>

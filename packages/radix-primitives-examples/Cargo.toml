@@ -15,10 +15,7 @@ console_error_panic_hook.workspace = true
 convert_case = "0.6.0"
 radix-leptos-avatar = "0.0.2"
 radix-leptos-checkbox = "0.0.2"
-radix-leptos-icons = { git = "https://github.com/RustForWeb/radix", features = [
-    "check",
-    "font-italic",
-] }
+radix-leptos-icons = "0.0.2"
 radix-leptos-label = "0.0.2"
 radix-leptos-progress = "0.0.2"
 radix-leptos-switch = "0.0.2"

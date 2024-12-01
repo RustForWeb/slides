@@ -657,9 +657,9 @@ dependencies = [
 
 [[package]]
 name = "indexmap"
-version = "2.6.0"
+version = "2.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "707907fe3c25f5424cce2cb7e1cbcafee6bdbe735ca90ef77c29e84591e5b9da"
+checksum = "62f822373a4fe84d4bb149bf54e584a7f4abec90e072ed49cda0edea5b95471f"
 dependencies = [
  "equivalent",
  "hashbrown 0.15.2",
@@ -1191,7 +1191,8 @@ dependencies = [
 [[package]]
 name = "radix-leptos-icons"
 version = "0.0.2"
-source = "git+https://github.com/RustForWeb/radix#b1a33edbf6a884b35904317c4e3ceaa5db268c05"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8cfcb2f0e557ba46d29e3c7dfe741f96d77da9bbb61c0176c416e644787ba77d"
 dependencies = [
  "leptos",
 ]

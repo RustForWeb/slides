@@ -12,7 +12,7 @@ version.workspace = true
 [dependencies]
 console_log.workspace = true
 console_error_panic_hook.workspace = true
-convert_case = "0.6.0"
+convert_case = "0.7.0"
 radix-leptos-avatar = "0.0.2"
 radix-leptos-checkbox = "0.0.2"
 radix-leptos-icons = "0.0.2"

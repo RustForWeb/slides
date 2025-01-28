@@ -139,7 +139,7 @@ version = "0.14.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "68578f196d2a33ff61b27fae256c3164f65e36382648e30666dde05b8cc9dfdf"
 dependencies = [
- "convert_case",
+ "convert_case 0.6.0",
  "nom",
  "pathdiff",
  "serde",
@@ -191,6 +191,15 @@ name = "convert_case"
 version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ec182b0ca2f35d8fc196cf3404988fd8b8c739a4d270ff118a398feb0cbec1ca"
+dependencies = [
+ "unicode-segmentation",
+]
+
+[[package]]
+name = "convert_case"
+version = "0.7.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bb402b8d4c85569410425650ce3eddc7d698ed96d39a73f941b08fb63082f1e7"
 dependencies = [
  "unicode-segmentation",
 ]
@@ -797,7 +806,7 @@ checksum = "4b13bc3db70715cd8218c4535a5af3ae3c0e5fea6f018531fc339377b36bc0e0"
 dependencies = [
  "attribute-derive",
  "cfg-if",
- "convert_case",
+ "convert_case 0.6.0",
  "html-escape",
  "itertools",
  "leptos_hot_reload",
@@ -1101,9 +1110,9 @@ dependencies = [
 
 [[package]]
 name = "proc-macro2"
-version = "1.0.92"
+version = "1.0.93"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "37d3544b3f2748c54e147655edb5025752e2303145b5aefb3c3ea2c78b973bb0"
+checksum = "60946a68e5f9d28b0dc1c21bb8a97ee7d018a8b322fa57838ba31cc878e22d99"
 dependencies = [
  "unicode-ident",
 ]
@@ -1123,9 +1132,9 @@ dependencies = [
 
 [[package]]
 name = "quote"
-version = "1.0.37"
+version = "1.0.38"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b5b9d34b8991d19d98081b46eacdd8eb58c6f2b201139f7c5f643cc155a633af"
+checksum = "0e4dccaaaf89514f546c693ddc140f729f958c247918a13380cccc6078391acc"
 dependencies = [
  "proc-macro2",
 ]
@@ -1486,7 +1495,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "faaaf648c6967aef78177c0610478abb5a3455811f401f3c62d10ae9bd3901a1"
 dependencies = [
  "const_format",
- "convert_case",
+ "convert_case 0.6.0",
  "proc-macro2",
  "quote",
  "syn",
@@ -1518,7 +1527,7 @@ version = "0.0.1"
 dependencies = [
  "console_error_panic_hook",
  "console_log",
- "convert_case",
+ "convert_case 0.7.1",
  "floating-ui-leptos",
  "leptos",
  "log",
@@ -1531,7 +1540,7 @@ version = "0.0.1"
 dependencies = [
  "console_error_panic_hook",
  "console_log",
- "convert_case",
+ "convert_case 0.7.1",
  "leptos",
  "log",
  "radix-leptos-avatar",
@@ -1568,9 +1577,9 @@ checksum = "a8f112729512f8e442d81f95a8a7ddf2b7c6b8a1a6f509a95864142b30cab2d3"
 
 [[package]]
 name = "syn"
-version = "2.0.90"
+version = "2.0.96"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "919d3b74a5dd0ccd15aeb8f93e7006bd9e14c295087c9896a110f490752bcf31"
+checksum = "d5d0adab1ae378d7f53bdebc67a39f1f151407ef230f0ce2883572f5d8985c80"
 dependencies = [
  "proc-macro2",
  "quote",

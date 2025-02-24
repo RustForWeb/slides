@@ -11,6 +11,6 @@
         "dev": "trunk serve"
     },
     "devDependencies": {
-        "tailwindcss": "^3.4.15"
+        "tailwindcss": "^4.0.0"
     }
 }

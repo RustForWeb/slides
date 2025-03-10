@@ -19,5 +19,5 @@
     "engines": {
         "node": ">=20"
     },
-    "packageManager": "npm@11.1.0"
+    "packageManager": "npm@11.2.0"
 }

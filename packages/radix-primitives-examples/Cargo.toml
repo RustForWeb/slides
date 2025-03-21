@@ -20,6 +20,6 @@ radix-leptos-label = "0.0.2"
 radix-leptos-progress = "0.0.2"
 radix-leptos-switch = "0.0.2"
 radix-leptos-toggle = "0.0.2"
-leptos = { version = "0.6.15", features = ["csr"] }
+leptos = { version = "0.7.0", features = ["csr"] }
 log.workspace = true
 tailwind_fuse.workspace = true

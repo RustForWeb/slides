@@ -1,6 +1,6 @@
 use floating_ui_leptos::{
-    use_floating, IntoReference, MiddlewareVec, Placement, Strategy, UseFloatingOptions,
-    UseFloatingReturn,
+    IntoReference, MiddlewareVec, Placement, Strategy, UseFloatingOptions, UseFloatingReturn,
+    use_floating,
 };
 use leptos::{
     html::{AnyElement, Div},

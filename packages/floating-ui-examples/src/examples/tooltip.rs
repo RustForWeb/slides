@@ -1,7 +1,7 @@
 use floating_ui_leptos::{
-    use_floating, Arrow, ArrowData, ArrowOptions, DetectOverflowOptions, Flip, FlipOptions,
+    ARROW_NAME, Arrow, ArrowData, ArrowOptions, DetectOverflowOptions, Flip, FlipOptions,
     IntoReference, MiddlewareVec, Offset, OffsetOptions, Padding, Placement, Shift, ShiftOptions,
-    Side, UseFloatingOptions, UseFloatingReturn, ARROW_NAME,
+    Side, UseFloatingOptions, UseFloatingReturn, use_floating,
 };
 use leptos::{
     html::{Button, Div},

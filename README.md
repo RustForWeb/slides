@@ -1,4 +1,4 @@
-# Rust For Web Slides
+# Rust for Web Slides
 
 Slides for presentations.
 
@@ -6,6 +6,6 @@ Slides for presentations.
 
 This project is available under the [MIT license](LICENSE.md).
 
-## Rust For Web
+## Rust for Web
 
-[Rust For Web](https://github.com/RustForWeb) creates and ports web UI libraries for Rust. All projects are free and open source.
+[Rust for Web](https://github.com/RustForWeb) creates and ports web UI libraries for Rust. All projects are free and open source.

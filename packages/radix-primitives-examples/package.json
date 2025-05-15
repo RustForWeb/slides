@@ -1,7 +1,7 @@
 {
     "name": "@rustforweb/slides-radix-primitives-examples",
     "description": "Rust Radix Primitives examples.",
-    "author": "Rust For Web <info@rustforweb.org>",
+    "author": "Rust for Web <info@rustforweb.org>",
     "repository": "github:RustForWeb/slides",
     "license": "MIT",
     "private": true,

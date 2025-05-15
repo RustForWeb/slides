@@ -1,7 +1,7 @@
 {
     "name": "@rustforweb/slides-2024-11-leptos-meetup",
     "description": "Slides for Leptos Meetup on 30 November 2024.",
-    "author": "Rust For Web <info@rustforweb.org>",
+    "author": "Rust for Web <info@rustforweb.org>",
     "repository": "github:RustForWeb/slides",
     "license": "MIT",
     "private": true,

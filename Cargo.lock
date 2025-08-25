@@ -1567,7 +1567,6 @@ version = "0.0.1"
 dependencies = [
  "console_error_panic_hook",
  "console_log",
- "convert_case 0.8.0",
  "leptos",
  "log",
  "radix-leptos-avatar",
@@ -1577,7 +1576,6 @@ dependencies = [
  "radix-leptos-progress",
  "radix-leptos-switch",
  "radix-leptos-toggle",
- "tailwind_fuse",
 ]
 
 [[package]]

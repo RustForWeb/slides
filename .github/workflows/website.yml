@@ -5,6 +5,9 @@ on:
         branches:
             - main
 
+permissions:
+    contents: read
+
 concurrency:
     group: ${{ github.workflow }}-${{ github.ref }}
     cancel-in-progress: false
@@ -13,21 +16,17 @@ jobs:
     slides-build:
         name: Build Slides
         runs-on: ubuntu-latest
+
         steps:
             - uses: actions/checkout@v5
               with:
                   fetch-depth: 0
 
             - name: Set up Rust toolchain
-              run: |
-                  rustup toolchain install stable --no-self-update --profile minimal
-                  rustup target add wasm32-unknown-unknown
-
-            - name: Set up Rust cache
-              uses: swatinem/rust-cache@v2
+              uses: actions-rust-lang/setup-rust-toolchain@v1
               with:
-                  cache-on-failure: true
-                  save-if: ${{ github.ref == 'refs/heads/main' }}
+                  components: clippy, rustfmt
+                  target: wasm32-unknown-unknown
 
             - name: Install Cargo Binary Install
               uses: cargo-bins/cargo-binstall@main
@@ -54,10 +53,12 @@ jobs:
         needs: slides-build
         if: github.ref == 'refs/heads/main'
         runs-on: ubuntu-latest
+
         permissions:
             contents: read
             pages: write
             id-token: write
+
         steps:
             - uses: actions/checkout@v5
               with:

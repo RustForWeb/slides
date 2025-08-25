@@ -25,7 +25,6 @@ jobs:
             - name: Set up Rust toolchain
               uses: actions-rust-lang/setup-rust-toolchain@v1
               with:
-                  components: clippy, rustfmt
                   target: wasm32-unknown-unknown
 
             - name: Install Cargo Binary Install
@@ -35,7 +34,7 @@ jobs:
               run: cargo binstall --force -y trunk
 
             - name: Install Node.js dependencies
-              run: npm install
+              run: npm ci
 
             - name: Build
               run: npm run build
